@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumberGame.MainPage">
+
+    <Grid RowDefinitions="*,*,6*" ColumnDefinitions="*,*,*">
+        <Label 
+            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" 
+            HorizontalOptions="Center"
+            Text="Number Game" FontSize="Title"/>
+
+        <Image x:Name="ImgFirstDigit" 
+               Grid.Row="1" Grid.Column="0" 
+               HorizontalOptions="End"
+               Source="question_mark.png"/>
+
+        <Image x:Name="ImgSecondDigit" 
+               Grid.Row="1" Grid.Column="1" 
+               Source="question_mark.png"/>
+
+        <Image x:Name="ImgThirdDigit" 
+               Grid.Row="1" Grid.Column="2" 
+               HorizontalOptions="Start"
+               Source="question_mark.png"/>
+
+        <Button 
+            Grid.Row="2" Grid.Column="1" 
+            Text="Play" 
+            VerticalOptions="Center"
+            Clicked="OnButtonclicked"/>
+    </Grid>
+</ContentPage>
